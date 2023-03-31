@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Details</title>
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body > 
+    <div><h1>Registration Form</h1></div>
+    <form>
+        <p>
+
+            <label for="Name">Name</label>
+            <input type="text" id="Name" placeholder="Enter your full name"  pattern="[a-z, A-Z]{2,30}" required>
+        </p>
+        <p>
+            <label for="Email">Email ID</label>
+            <input type="email" id="Email" placeholder="Eg: abc@gmail.com" required>
+        </p>
+        <p>
+            <label for="Date of Birth">Birth Date</label>
+            <input type="date" id="Date of Birth" required>
+        </p>
+        <p>
+            Gender:
+            <input type="radio" id="M1" value="Male" name="Gender" required>
+            <label for="M1">Male</label>
+            <input type="radio" id="F1" value="Female"    name="Gender" required>
+            <label for="F1">Female</label>
+            <input type="radio" id="Other" value="Other" name="Gender" required>
+            <label for="Other">Other</label>
+        </p>
+        <p>
+            <label for="No">Number</label>
+            <input type="number"  id="No" maxlength="10" pattern='[0-9]{10}' required>
+        </p>
+        <p>
+            <label for="Country">Country</label>
+            <select id="Country" name="Country" required>
+                <option value="">--select--</option>
+                <option value="India">India</option>
+                <option value="UK">UK</option>
+                <option value="London">London</option>
+                <option value="Other">Other</option>
+            </select>
+        </p>
+        <p>
+            Any Disability:
+            <input type="radio" id="Yes" value="yes" name="Disability" required>
+            <label for="Yes">Yes</label>
+            <input type="radio" id="No" value="no" name="Disability" required>
+            <label for="No">No</label>
+        </p>
+        <input type="submit" />
+        <input type="reset">
+    </form>
+</body>
+</html>
